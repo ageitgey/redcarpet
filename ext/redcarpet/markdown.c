@@ -2144,8 +2144,8 @@ parse_htmlblock(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t 
 	while (i < size && data[i] != '>' && data[i] != ' ')
 		i++;
 
-	if (i < size)
-		curtag = find_block_tag((char *)data + 1, (int)i - 1);
+	//if (i < size)
+	//	curtag = find_block_tag((char *)data + 1, (int)i - 1);
 
 	/* handling of special cases */
 	if (!curtag) {
